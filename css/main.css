@@ -99,8 +99,8 @@ body {font-family: 'MyriadPro-Regular';}
 .slogan strong {color: #ffc600; font-size: 54px; display: block;}
 .slogan em {color: #ffc600; font-size: 21px; font-style: normal;}
 .block1 {padding: 277px 0 0 240px; height: 511px; background: url(../img/img1.jpg) 50% no-repeat; background-attachment: fixed; background-size:cover;}
-.block3 {padding: 40px 0; background: url(../img/img2.jpg) 50% 0 no-repeat; background-attachment: fixed;}
-.block5 {padding: 40px 0; background: url(../img/img3.jpg) 50% 0 no-repeat; background-attachment: fixed;}
+.block3 {padding: 40px 0; background: url(../img/img2.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
+.block5 {padding: 40px 0; background: url(../img/img3.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
 
 .white_ttl {color: #fff;}
 
