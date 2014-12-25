@@ -92,7 +92,7 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .logo {padding-left: 20px;}
 
 .phone {color: #006d44; font-size: 40px; position: absolute; right: 190px; top: 0px; font-family: 'MyriadPro-Cond';}
-.g_button {vertical-align: middle; background: #006d44; border-radius: 18px; display: inline-block; color: #fff; text-decoration: none; padding: 0 21px; height: 35px; line-height: 35px; font-size: 15px; text-transform: uppercase; transition:background 0.7s;}
+.g_button {vertical-align: middle; background: #006d44; border-radius: 18px; display: inline-block; color: #fff; text-decoration: none; padding: 0 21px; height: 35px; line-height: 35px; font-size: 15px; text-transform: uppercase; transition:background 0.7s; cursor: pointer;}
 .g_button:hover {background: #008e59; transition:background 0.7s;}
 .g_big {font-size: 23px; border-radius: 30px; padding: 0 34px; height: 64px; line-height: 64px;}
 
@@ -108,15 +108,16 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 
 .ttl {text-transform: uppercase; font-size: 40px; font-weight: normal; margin: 0 0 50px; text-align: center;}
 .ttl2 {color: #006d44; font-size: 25px; text-transform: uppercase; padding: 0 0 30px;}
+.sub_ttl {color: #006d44; text-align: center; text-transform: uppercase; font-size: 21px;}
 .white_ttl {color: #fff;}
 .dark {color: #fff;}
 .holder {padding: 72px 0;}
 .work_holder {padding: 72px 0 10px;}
-.w50 {width: 50%; float: left; box-sizing:border-box; padding: 0 40px; background: url(../img/dash.gif) 0 0 repeat-y;}
-.w50:first-child {background: none;}
+.w50 {width: 50%; float: left; box-sizing:border-box; padding: 0 0 0 40px; background: url(../img/dash.gif) 0 0 repeat-y;}
+.w50:first-child {background: none; padding: 0 40px 0 0;}
 .w50:first-child .ttl2 {text-align: right; padding-right: 10px;}
 
-.slider {margin: 40px 0 20px;}
+.slider {margin: 40px 0 35px;}
 
 .all_reasons {overflow: hidden;}
 .all_re {width: 960px; text-align: center;}
@@ -131,8 +132,10 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .problem_item .tx {padding: 0 34px 0 0; text-align: right;}
 .solution_item .tx {padding: 0  0 0 34px;}
 .tx {vertical-align: middle; display: table-cell; font-family: 'MyriadPro-Bold'; font-size: 18px;}
+.explain {vertical-align: middle; display: table-cell; font-size: 14px; color: #888; padding: 0 0 0 34px;}
+.problem_item .explain {text-align: right; padding:0 34px 0 0;}
 .advant {padding: 20px 0;}
-.icon {width: 74px; height: 74px; background-image: url(../img/icons1.png); background-repeat: no-repeat; vertical-align: middle; display: table-cell;}
+.icon {width: 74px; height: 74px; background-image: url(../img/icons1.png); background-repeat: no-repeat; vertical-align: middle; display: table-cell; cursor: pointer;}
 .dust {background-position: 0 0;}
 .surf {background-position: 0 -91px;}
 .wet {background-position: 0 -180px;}
@@ -147,6 +150,21 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .corros2 {background-position: -251px -360px;}
 .tires2 {background-position: -251px -448px;}
 .mold2 {background-position: -251px -536px;}
+
+.dust:hover {background-position: -82px 0;}
+.surf:hover {background-position: -82px -91px;}
+.wet:hover {background-position: -82px -180px;}
+.cracks:hover {background-position: -82px -269px;}
+.corros:hover {background-position: -82px -360px;}
+.tires:hover {background-position: -82px -448px;}
+.mold:hover {background-position: -82px -536px;}
+.dust2:hover {background-position: -332px 0;}
+.surf2:hover {background-position: -332px -91px;}
+.wet2:hover {background-position: -332px -180px;}
+.cracks2:hover {background-position: -332px -269px;}
+.corros2:hover {background-position: -332px -360px;}
+.tires2:hover {background-position: -332px -448px;}
+.mold2:hover {background-position: -332px -536px;}
 
 .workflow {background: url(../img/line2.png) 275px 155px no-repeat; padding-left: 120px; width: 820px;}
 .work_item {margin: 0 67px 42px 0; float: left;}
@@ -179,6 +197,27 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .pin a:hover {background: url(../img/icons2.png) -100px -61px no-repeat;}
 .gp a:hover {background: url(../img/icons2.png) -150px -61px no-repeat;}
 .email {color: #555; font-size: 14px; position: absolute; right: 0; top: 42px;}
+
+.jcarousel:before {position: absolute; content:""; height: 397px; width: 100%; background: url(../img/white.png) 50% 0 no-repeat; left: 0; top: 0; z-index: 99;}
+.jcarousel li {float: left; margin: 0 20px;}
+.jcarousel ul {width: 20000em; position: relative; list-style: none; margin: 0; padding: 0;}
+.jcarousel {position: relative; overflow: hidden;}
+.jcarousel-wrapper {position: relative;}
+.jcarousel-control-prev, .jcarousel-control-next {position: absolute; top: 168px; z-index: 199; display: block; width: 55px; height: 55px; text-indent: -9999px;}
+.jcarousel-control-prev {left: 50%; margin-left: -285px; background: url(../img/arr.png) 0 0 no-repeat;}
+.jcarousel-control-next {right: 50%; margin-right: -285px; background: url(../img/arr.png) 100% 0 no-repeat;}
+
+/* --- POPUP properties --- */
+.popup {display: none; position:fixed; left:50%; top:200px; margin-left:-200px; padding:30px; width:400px; z-index:2000;}
+.popup form {}
+.overlay {display:none; background:#000; bottom:0; left:0; opacity:0.8; position:fixed; right:0; top:0; z-index:1000;}
+.sinp {display:block; margin:0 0 15px; height:31px; padding:0 10px; width:183px; border:0; background:none; color:#8f8f8f; font-style:italic; text-align:center;}
+.popup_ttl {color:#fff; text-transform:uppercase; font-size:20px; font-weight:bold; margin:0 0 25px; text-align:center;}
+.ssbm {width:157px; padding:0; color:#c10000; font-family:'Ubuntu Condensed', Arial, sans-serif; font-size:20px; text-transform:uppercase; margin:22px 0 0 22px; border:0; background:none;}
+
+.inp, .sbm {margin: 0 0 18px; border: 0; background: #fff; padding: 20px 30px; text-align: center; font-size: 20px; font-family: 'MyriadPro-Regular', sans-serif; width:340px; border-radius: 30px; outline: 0;}
+.sbm {width: 400px!important; background: #006d44; color: #fff; transition:background 0.7s;}
+.sbm:hover {background: #008e59; transition:background 0.7s;}
 
 
 /* ==========================================================================
