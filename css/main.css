@@ -86,7 +86,7 @@ textarea {
    ========================================================================== */
 body {font-family: 'MyriadPro-Regular', sans-serif;}
 .containr {width: 940px; margin: 0 auto;}
-.main_head {background: #fff; background: rgba(255, 255, 255, 0.3); position: fixed; width: 100%; top: 0; left: 0; padding: 27px 0 0; height: 73px;}
+.main_head {background: #fff; background: rgba(255, 255, 255, 0.3); position: fixed; width: 100%; top: 0; left: 0; padding: 27px 0 0; height: 73px; z-index: 999;}
 .main_head .containr  {position: relative;}
 .callback  {position: absolute; right: 0; top: 5px;}
 .logo {padding-left: 20px;}
@@ -111,6 +111,7 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .white_ttl {color: #fff;}
 .dark {color: #fff;}
 .holder {padding: 72px 0;}
+.work_holder {padding: 72px 0 10px;}
 .w50 {width: 50%; float: left; box-sizing:border-box; padding: 0 40px; background: url(../img/dash.gif) 0 0 repeat-y;}
 .w50:first-child {background: none;}
 .w50:first-child .ttl2 {text-align: right; padding-right: 10px;}
@@ -126,8 +127,8 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .number {color: #fed136; font-size: 65px; padding-right: 21px; width: 34px; display: table-cell; vertical-align: middle;}
 .reason_i {width: 184px; padding-right: 20px; display: table-cell; vertical-align: middle;}
 
-.problem_item, .solution_item {min-height: 75px; padding: 9px 0; display: table; width: 100%;}
-.problem_item .tx {padding: 0 34px 0 0;}
+.problem_item, .solution_item {min-height: 75px; padding: 9px 0; display: table; width: 100%; position: relative;}
+.problem_item .tx {padding: 0 34px 0 0; text-align: right;}
 .solution_item .tx {padding: 0  0 0 34px;}
 .tx {vertical-align: middle; display: table-cell; font-family: 'MyriadPro-Bold'; font-size: 18px;}
 .advant {padding: 20px 0;}
@@ -147,7 +148,7 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .tires2 {background-position: -251px -448px;}
 .mold2 {background-position: -251px -536px;}
 
-.workflow {background: url(../img/line.png) 155px 155px no-repeat; padding-left: 120px;}
+.workflow {background: url(../img/line2.png) 275px 155px no-repeat; padding-left: 120px; width: 820px;}
 .work_item {margin: 0 67px 42px 0; float: left;}
 .work_item img {display: block; margin: 0 0 16px;}
 .numb {font-family: 'MyriadPro-Bold'; font-size: 44px; float: left; padding: 0 9px 0 4px;}
