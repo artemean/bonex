@@ -85,25 +85,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {font-family: 'MyriadPro-Regular', sans-serif;}
+html, body {height: 100%;}
 .containr {width: 940px; margin: 0 auto;}
-.main_head {background: #fff; background: rgba(255, 255, 255, 0.3); position: fixed; width: 100%; top: 0; left: 0; padding: 27px 0 0; height: 73px; z-index: 999;}
+.main_head {background: #fff; background: rgba(255, 255, 255, 0.3); position: fixed; width: 100%; top: 0; left: 0; padding: 27px 0 0; height: 73px; z-index: 999; transition:background 0.5s;}
+.opaque {background: rgba(255, 255, 255, 0.9); transition:background 0.5s;}
 .main_head .containr  {position: relative;}
 .callback  {position: absolute; right: 0; top: 5px;}
 .logo {padding-left: 20px;}
 
 .phone {color: #006d44; font-size: 40px; position: absolute; right: 190px; top: 0px; font-family: 'MyriadPro-Cond';}
-.g_button {vertical-align: middle; background: #006d44; border-radius: 18px; display: inline-block; color: #fff; text-decoration: none; padding: 0 21px; height: 35px; line-height: 35px; font-size: 15px; text-transform: uppercase; transition:background 0.7s; cursor: pointer;}
+.g_button {font-family: sans-serif; vertical-align: middle; background: #006d44; border-radius: 18px; display: inline-block; color: #fff; text-decoration: none; padding: 0 21px; height: 35px; line-height: 35px; font-size: 14px; text-transform: uppercase; transition:background 0.7s; cursor: pointer;}
 .g_button:hover {background: #008e59; transition:background 0.7s;}
-.g_big {font-size: 23px; border-radius: 30px; padding: 0 34px; height: 64px; line-height: 64px;}
+.g_big {font-size: 22px; border-radius: 30px; padding: 0 34px; height: 64px; line-height: 64px;}
 
-.slogan {/*width: 530px;*/ margin-bottom: 35px; padding: 30px; background: #3E3E3E; background: rgba(62,62,62,0.8); -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; color: #fff; font-size: 31px; text-transform: uppercase; text-align: left;}
-.slogan strong {color: #ffc600; font-size: 54px; display: block; font-family: 'MyriadPro-Bold';}
+.slogan {margin-bottom: 35px; padding: 30px 30px 25px; background: #3E3E3E; background: rgba(62,62,62,0.8); border-radius: 10px; color: #fff; font-size: 31px; text-transform: uppercase; text-align: left;}
+.slogan strong {color: #ffc600; font-size: 54px; display: block; font-family: 'MyriadPro-Bold'; line-height: 56px; margin: 10px 0 10px;}
 .slogan em {font-size: 21px; font-style: normal;}
 .block1 {height: 788px; background: url(../img/img1.jpg) 50% no-repeat; background-attachment: fixed; background-size:cover;}
-.block1 .containr {padding: 277px 0 0 350px; width: 590px; text-align: right;}
-.block3 {/*padding: 40px 0; */background: url(../img/img2.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
-.block5 {/*padding: 40px 0; */background: url(../img/img3.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
-.block7 {/*height: 486px; */background: url(../img/img4.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
+.block1 .containr {padding: 277px 0 0 330px; width: 610px; text-align: right;}
+.block3 {background: url(../img/img2.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
+.block5 {background: url(../img/img3.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
+.block7 {background: url(../img/img4.jpg) 50% 0 no-repeat; background-attachment: fixed; background-size:cover;}
 .block8 {padding: 80px 0 70px;}
 
 .ttl {text-transform: uppercase; font-size: 40px; font-weight: normal; margin: 0 0 50px; text-align: center;}
@@ -121,8 +123,8 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 
 .all_reasons {overflow: hidden;}
 .all_re {width: 960px; text-align: center;}
-.dib {display: inline-block; width: 301px; margin: 0 15px 16px 0; }
-.reason {background: #000; background: rgba(0,0,0,0.8); padding: 0 0 0 30px; width: 271px; min-height: 128px; display: table; vertical-align: top; text-align: left;}
+.dib {display: inline-block; width: 301px; padding: 0 15px 16px 0; }
+.reason {background: #000; background: rgba(0,0,0,0.8); padding: 0 0 0 30px; width: 271px; height: 128px; display: table; vertical-align: top; text-align: left;}
 .reason p {font-size: 14px; color: #c1c1c1; margin: 5px 0 0;}
 .reason strong {font-family: 'MyriadPro-Bold'; text-transform: uppercase; font-size: 15px;}
 .number {color: #fed136; font-size: 65px; padding-right: 21px; width: 34px; display: table-cell; vertical-align: middle;}
@@ -176,12 +178,16 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 
 .btg {font-size: 40px; color: #006d44; text-transform: uppercase; display: inline-block; margin-right: 40px;}
 .btg span {color: #222;}
-.ask {color: #ffb400; font-size: 25px; display: inline-block; border-bottom: 1px dashed; cursor: pointer; font-family: sans-serif;}
-.ask:hover {border-bottom: 0;}
+.ask {color: #ffb400; font-size: 25px; display: inline-block; font-family: sans-serif;}
+.ask a {color: #ffb400; border-bottom: 1px dashed; text-decoration: none;}
+.ask a:hover {border-bottom: 0;}
 .man {float: left; width: 530px; height: 485px; margin-left: -68px; background: url(../img/man.png) 0 100% no-repeat;}
 .dcf {float: left; width: 456px; padding: 105px 0 0;}
 
-.main_footer {background: #d2d2d2; padding: 30px 0; min-height: 33px; font-size: 14px; color: #555;}
+.m_wrap {min-height: 100%; /* equal to footer height */ margin-bottom: -104px; }
+.m_wrap:after {content: ""; display: block; }
+.main_footer, .m_wrap:after {height: 50px;}
+.main_footer {background: #d2d2d2; padding: 30px 0; font-size: 14px; color: #555;}
 .main_footer address {font-style: normal; padding: 0 0 10px;}
 .main_footer .containr {position: relative;}
 .main_footer .phone {font-family: 'MyriadPro-Regular'; color: #000; right: -32px;}
@@ -198,8 +204,8 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .gp a:hover {background: url(../img/icons2.png) -150px -61px no-repeat;}
 .email {color: #555; font-size: 14px; position: absolute; right: 0; top: 42px;}
 
-.jcarousel:before {position: absolute; content:""; height: 397px; width: 100%; background: url(../img/white.png) 50% 0 no-repeat; left: 0; top: 0; z-index: 99;}
-.jcarousel li {float: left; margin: 0 20px;}
+.jcarousel li {float: left; margin: 0 20px; text-align: center; color: #006d44; text-align: center; text-transform: uppercase; font-size: 21px; max-width: 595px;}
+.jcarousel img {display: block; margin: 0 0 40px;}
 .jcarousel ul {width: 20000em; position: relative; list-style: none; margin: 0; padding: 0;}
 .jcarousel {position: relative; overflow: hidden;}
 .jcarousel-wrapper {position: relative;}
@@ -218,6 +224,7 @@ body {font-family: 'MyriadPro-Regular', sans-serif;}
 .inp, .sbm {margin: 0 0 18px; border: 0; background: #fff; padding: 20px 30px; text-align: center; font-size: 20px; font-family: 'MyriadPro-Regular', sans-serif; width:340px; border-radius: 30px; outline: 0;}
 .sbm {width: 400px!important; background: #006d44; color: #fff; transition:background 0.7s;}
 .sbm:hover {background: #008e59; transition:background 0.7s;}
+
 
 
 /* ==========================================================================

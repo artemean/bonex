@@ -16,3 +16,15 @@ $(".explain").hide();
 $( ".icon" ).hover(function() {
   $(this).siblings(".explain, .tx").toggle();
 });
+
+
+$(window).bind('scroll', function() {
+	 if ($(window).scrollTop() > 180) {
+	     $('.main_head').addClass('opaque');
+	     hp_menu.hide();
+	 }
+	 else {
+	     $('.main_head').removeClass('opaque');
+	     hp_menu.show();
+	 }
+});
