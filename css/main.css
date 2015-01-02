@@ -87,8 +87,8 @@ textarea {
 body {font-family: 'MyriadPro-Regular', sans-serif;}
 html, body {height: 100%;}
 .containr {width: 940px; margin: 0 auto;}
-.main_head {background: #fff; background: rgba(255, 255, 255, 0.3); position: fixed; width: 100%; top: 0; left: 0; padding: 27px 0 0; height: 73px; z-index: 999; transition:background 0.5s;}
-.opaque {background: rgba(255, 255, 255, 0.9); transition:background 0.5s;}
+.main_head {background: #fff; background: rgba(255, 255, 255, 0.3); position: fixed; width: 100%; top: 0; left: 0; padding: 27px 0 0; height: 73px; z-index: 999; -webkit-transition:background 0.5s; transition:background 0.5s;}
+.opaque {background: rgba(255, 255, 255, 0.9); -webkit-transition:background 0.5s; transition:background 0.5s;}
 .main_head .containr  {position: relative;}
 .callback  {position: absolute; right: 0; top: 5px;}
 .logo {padding-left: 20px;}
@@ -136,7 +136,7 @@ html, body {height: 100%;}
 .tx {vertical-align: middle; display: table-cell; font-family: 'MyriadPro-Bold'; font-size: 18px;}
 .explain {vertical-align: middle; display: table-cell; font-size: 14px; color: #888; padding: 0 0 0 34px;}
 .problem_item .explain {text-align: right; padding:0 34px 0 0;}
-.advant {padding: 20px 0;}
+.advant {padding: 20px 0; overflow: hidden;}
 .icon {width: 74px; height: 74px; background-image: url(../img/icons1.png); background-repeat: no-repeat; vertical-align: middle; display: table-cell; cursor: pointer;}
 .dust {background-position: 0 0;}
 .surf {background-position: 0 -91px;}
@@ -184,7 +184,7 @@ html, body {height: 100%;}
 .man {float: left; width: 530px; height: 485px; margin-left: -68px; background: url(../img/man.png) 0 100% no-repeat;}
 .dcf {float: left; width: 456px; padding: 105px 0 0;}
 
-.m_wrap {min-height: 100%; /* equal to footer height */ margin-bottom: -104px; }
+.m_wrap {min-height: 100%; margin-bottom: -104px; }
 .m_wrap:after {content: ""; display: block; }
 .main_footer, .m_wrap:after {height: 50px;}
 .main_footer {background: #d2d2d2; padding: 30px 0; font-size: 14px; color: #555;}
